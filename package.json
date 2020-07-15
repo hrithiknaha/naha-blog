@@ -1,0 +1,19 @@
+{
+	"name": "blog",
+	"version": "1.0.0",
+	"description": "A simple blogging website",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon index.js"
+	},
+	"author": "Hrithik Naha",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"mongoose": "^5.9.24"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.4"
+	}
+}
