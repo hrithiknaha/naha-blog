@@ -4,7 +4,7 @@ const router = require('express').Router();
 const Blogs = require('../models/blog');
 
 router.get('/blogs', (req, res) => {
-	Blogs.find((err, blogs) => {
+	Blogs.find({}, (err, blogs) => {
 		if (err) return console.log('Something went wrong ' + err);
 		if (blogs.length === 0) return res.json('No data found');
 		return res.json(blogs);
